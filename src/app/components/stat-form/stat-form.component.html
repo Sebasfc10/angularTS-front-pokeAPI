@@ -1,0 +1,41 @@
+<div>
+ <div class="col-sm-4 offset-md-4">
+   <div class="card card-body">
+      <form (submit)="edit ? updateStat() : submitStat()">
+        <div class="form-group pb-4">
+          <label class="font-weight-light">HEAL POINT</label>
+          <input type="text" placeholder="agrega" name="hp" [(ngModel)]="stat.hp" class="form-control"autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">ATTACK</label>
+          <input type="text" name="atk" [(ngModel)]="stat.atk" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">DEFENSE</label>
+          <input type="text" name="def" [(ngModel)]="stat.def" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">ATTACK SPECIAL</label>
+          <input type="text" name="atks" [(ngModel)]="stat.atks" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">DEFENSE SPECIAL</label>
+          <input type="text" name="defs" [(ngModel)]="stat.defs" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">SPEED</label>
+          <input type="text" name="vel" [(ngModel)]="stat.vel" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">PRECISION</label>
+          <input type="text" name="pre" [(ngModel)]="stat.pre" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <div class="form-group pb-4">
+          <label class="font-weight-light">EVADE</label>
+          <input type="text" name="eva" [(ngModel)]="stat.eva" class="form-control" placeholder="Stat Value" autofocus>
+        </div>
+        <button class="btn btn-primary btn-block">Agrega IVs a tus Pokemons</button>
+      </form>
+   </div>
+ </div>
+</div>

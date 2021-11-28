@@ -1,0 +1,44 @@
+
+<div *ngFor="let stat of stats" class="card card-body mb-2">
+  <div class="row">
+    <div class="col-md-8">
+      <ul>
+        <li class="ID">
+          ID: {{stat._id}}
+        </li>
+        <li>
+          HEAL POINT: {{stat.hp}}
+        </li>
+        <li>
+          ATTACK: {{stat.atk}}
+        </li>
+        <li>
+          DEFENSE: {{stat.def}}
+        </li>
+        <li>
+          ATTACK SPECIAL: {{stat.atks}}
+        </li>
+        <li>
+          DEFENSE SPECIAL: {{stat.defs}}
+        </li>
+        <li>
+          SPEED: {{stat.vel}}
+        </li>
+        <li>
+          PRECISION: {{stat.pre}}
+        </li>
+        <li>
+          EVADE: {{stat.eva}}
+        </li>
+      </ul>
+      <button class="btn btn-danger" (click)="deleteStats(stat._id)">
+        Eliminar IVs
+      </button>
+      <button class="btn btn-secondary" [routerLink]="['/stat/edit/',stat._id]">
+         Editar IVs
+      </button>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+</div>
